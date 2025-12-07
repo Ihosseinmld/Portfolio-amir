@@ -36,6 +36,7 @@ const LinkSection = ({ className }: { className?: string }) => {
           className="btn btn-ghost text-base-content/60 hover:text-base-content flex flex-row items-center gap-4 p-4"
           target={link.label !== "Email" ? "_blank" : "_parent"}
           id="social-link"
+          rel="noopener noreferrer"
         >
           <Icon icon={link.icon} width={28} height={28} />
           <div className="flex flex-row items-center gap-1">
