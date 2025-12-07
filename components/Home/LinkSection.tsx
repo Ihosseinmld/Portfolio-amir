@@ -29,28 +29,21 @@ const LinkSection = ({ className }: { className?: string }) => {
   ];
   return (
     <div className={twMerge("flex flex-row flex-wrap gap-2", className)}>
-      {links.map((link) => {
-        const isEmail = link.label === "Email";
-        const LinkComponent = isEmail ? "a" : Link;
-        const linkProps = isEmail
-          ? { href: link.href }
-          : { href: link.href, target: "_blank" };
-        
-        return (
-          <LinkComponent
-            key={link.href}
-            {...linkProps}
-            className="btn btn-ghost text-base-content/60 hover:text-base-content flex flex-row items-center gap-4 p-4"
-            id="social-link"
-          >
-            <Icon icon={link.icon} width={28} height={28} />
-            <div className="flex flex-row items-center gap-1">
-              <span className="text-ba32 font-medium">{link.label}</span>
-              <Icon icon="mynaui:arrow-up-right" width={24} height={24} />
-            </div>
-          </LinkComponent>
-        );
-      })}
+      {links.map((link) => (
+        <Link
+          key={link.href}
+          href={link.href}
+          className="btn btn-ghost text-base-content/60 hover:text-base-content flex flex-row items-center gap-4 p-4"
+          target={link.label !== "Email" ? "_blank" : "_parent"}
+          id="social-link"
+        >
+          <Icon icon={link.icon} width={28} height={28} />
+          <div className="flex flex-row items-center gap-1">
+            <span className="text-ba32 font-medium">{link.label}</span>
+            <Icon icon="mynaui:arrow-up-right" width={24} height={24} />
+          </div>
+        </Link>
+      ))}
     </div>
   );
 };
