@@ -5,6 +5,7 @@ import { ActionData } from "@/lib/formTypes";
 import { connectDB } from "../db/db";
 import contactModel from "../db/models/contactModel";
 import { contactSchema } from "../validation/schemas/contactSchema";
+import { sendContactNotification } from "../email/sendContactNotification";
 
 export const createContact = async (
   prevState: ActionData,
@@ -27,6 +28,12 @@ export const createContact = async (
     subject: result.data.subject,
     message: result.data.message,
   });
+
+  try {
+    await sendContactNotification(result.data);
+  } catch (error) {
+    console.error("Failed to send contact notification email", error);
+  }
 
   return {
     message: "SUCCESS",
