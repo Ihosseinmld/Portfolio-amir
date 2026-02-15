@@ -15,7 +15,7 @@ const HeroSectionContent = () => {
         >
           Hey! My Name is <br className="hidden md:inline" />
           <span className="text-primary text-5xl font-bold sm:text-6xl md:text-8xl">
-            Hossein
+            Amir Hossein
           </span>
         </h1>
         <p
