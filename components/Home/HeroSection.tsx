@@ -22,7 +22,7 @@ const HeroSectionContent = () => {
           className="hero-description mt-4 text-base opacity-60"
           id="hero-section-description"
         >
-          I am Hossein, a creative content creator with over 3 years of experience in capturing and crafting compelling stories. 
+          I am Amir Hossein, a creative content creator with over 3 years of experience in capturing and crafting compelling stories. 
           <br />
           <br />
           From professional cinematography to advanced AI-driven editing, I bring ideas to life with precision and passion.

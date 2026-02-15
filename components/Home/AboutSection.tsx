@@ -15,7 +15,7 @@ const AboutSectionContent = () => {
           description="My journey in few words"
         />
         <p className="text-base-content/80 mt-8 leading-relaxed text-sm sm:text-base" id="about-description">
-          Hi, I&apos;m  Amin Hossein, a creative content creator with over 3 years of experience in capturing and crafting compelling stories. From professional cinematography to advanced AI-driven editing<br /> I bring ideas to life with precision and passion.
+          Hi, I&apos;m  Amir Hossein, a creative content creator with over 3 years of experience in capturing and crafting compelling stories. From professional cinematography to advanced AI-driven editing<br /> I bring ideas to life with precision and passion.
         </p>
         <LinkSection className="mt-8"/>
       </div>
