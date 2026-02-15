@@ -4,60 +4,42 @@ export interface SkillInterface {
 }
 export const skills: SkillInterface[] = [
   {
-    name: "Frontend Development",
+    name: "video edit",
     tools: [
-      "React.js",
-      "Next.js",
-      "Tailwind CSS",
-      "Framer Motion",
-      "GSAP",
-      "Redux",
-      "MUI",
-      "Radix UI",
-      "DaisyUI",
-      "Shadcn",
-      "React Hook Form",
-      "Zustand",
-      "React Query",
-      "Axios",
+      "premier pro",
+      "after effects",
+      "DaVinci Resolve",
+
+      
     ],
   },
   {
-    name: "Backend Development",
+    name: "Filming",
     tools: [
-      "Node.js",
-      "NestJS",
-      "Express.js",
-      "MongoDB",
-      "Prisma ORM",
-      "Mongoose",
-      "REST API",
-      "Zod",
-      "JWT",
-      "Bcrypt",
-      "Passport.js",
+      "Cinema Cameras (Sony/Canon)",
+      "Gimbal Operations (DJI Ronin)",
+      "Professional Lighting Setup",
+ 
+ 
+
     ],
   },
   {
-    name: "Fullstack & DevOps",
+    name: "Scenario writing",
     tools: [
-      "Git & GitHub",
-      "Vercel",
-      "Docker",
-      "CI/CD",
-      "Nodemailer",
-      "Stripe API",
-      "Cloudinary",
-      "Firebase",
+      "Final Draft",
+      "Notion",
+      "AI-assisted brainstorming",
+
+ 
     ],
   },
   {
-    name: "UI/UX & Design Tools",
+    name: "Design",
     tools: [
-      "Figma",
-      "Responsive Design",
-      "Component-based Architecture",
-      "Accessibility (a11y)",
+      "Adobe Photoshop",
+      "Adobe Illustrator",
+      "Ai tools",
     ],
   },
 ];

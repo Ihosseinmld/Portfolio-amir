@@ -12,7 +12,7 @@ const Navbar = () => {
       <div className="bg-primary h-1 w-1 animate-pulse rounded-full opacity-20 hidden lg:inline"></div>
       <NavLink href={"#projects"}>PROJECTS</NavLink>
       <div className="bg-primary h-1 w-1 animate-pulse rounded-full opacity-20 hidden lg:inline"></div>
-      <span className="text-primary text-xl font-bold">A.MOHAMMADI</span>
+      <span className="text-primary text-xl font-bold">H.MALEKI</span>
       <div className="bg-primary h-1 w-1 animate-pulse rounded-full opacity-20 hidden lg:inline"></div>
       <NavLink href={"#about"}>ABOUT</NavLink>
       <div className="bg-primary h-1 w-1 animate-pulse rounded-full opacity-20 hidden lg:inline"></div>

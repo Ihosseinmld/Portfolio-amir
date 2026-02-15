@@ -15,18 +15,17 @@ const HeroSectionContent = () => {
         >
           Hey! My Name is <br className="hidden md:inline" />
           <span className="text-primary text-5xl font-bold sm:text-6xl md:text-8xl">
-            Amirreza
+            Hossein
           </span>
         </h1>
         <p
           className="hero-description mt-4 text-base opacity-60"
           id="hero-section-description"
         >
-          I am a full stack developer specializing in Next.js, Nest.js, and
-          React.
+          I am Hossein, a creative content creator with over 3 years of experience in capturing and crafting compelling stories. 
           <br />
-          Passionate about building modern web applications and learning new
-          technologies.
+          <br />
+          From professional cinematography to advanced AI-driven editing, I bring ideas to life with precision and passion.
         </p>
         <div className="hero-buttons mt-8 flex flex-col gap-4 sm:flex-row">
           <TalkButton />

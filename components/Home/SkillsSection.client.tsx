@@ -13,7 +13,7 @@ const SkillsSection = () => {
   useGSAP(
     () => {
       const mm = gsap.matchMedia();
-      mm.add("(min-width: 1024px)", () => {
+      mm.add("(min-width: 512px)", () => {
         const tl = gsap.timeline({
           scrollTrigger: {
             trigger: root.current,
@@ -27,7 +27,7 @@ const SkillsSection = () => {
             tl.fromTo(
               el,
               { y: 40, opacity: 0 },
-              { duration: 0.4, opacity: 1, y: 0, delay: i * 0.05 },
+              { duration: 0.4, opacity: 1, y: 0, delay: i * 0.07 },
               ">"
             );
           });

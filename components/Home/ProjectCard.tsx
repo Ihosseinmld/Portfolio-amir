@@ -1,9 +1,11 @@
 import React from "react";
 import Image from "next/image";
-
+import { twMerge } from "tailwind-merge";
 import { ProjectInterface } from "@/lib/data/projects";
 
 import TalkButton from "./TalkButton";
+import Icon from "../ui/Icon";
+import Link from "next/link";
 
 const ProjectCard = (props: ProjectInterface) => {
   return (
@@ -31,7 +33,19 @@ const ProjectCard = (props: ProjectInterface) => {
             </div>
           ))}
         </div>
-        <TalkButton className="mt-8 w-full md:w-max" />
+        <div className="mt-8 flex w-full items-center gap-4 md:w-max">
+          <TalkButton className="w-full md:w-max" />
+          <Link
+            href={props.link}
+            target="_blank"
+            className={twMerge(
+              "btn btn-primary from-primary to-secondary px-16 z-50 w-full md:w-max"
+            )}
+          >
+            <Icon icon="iconoir:youtube" width={24} />
+            Watch Video
+          </Link>
+        </div>
       </div>
       <div className="relative order-1 flex w-full items-center justify-center lg:order-2">
         <Image

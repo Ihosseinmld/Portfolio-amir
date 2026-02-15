@@ -6,30 +6,24 @@ import { twMerge } from "tailwind-merge";
 const LinkSection = ({ className }: { className?: string }) => {
   const links = [
     {
-      href: "https://github.com/AmirmAfzal",
-      icon: "lineicons:github",
-      label: "GitHub",
-    },
-
-    {
       href: "https://www.linkedin.com/in/amirreza-mohammadi-afzal-295205366/",
       icon: "lineicons:linkedin",
       label: "Linkedin",
     },
     {
-      href: "mailto:amirrrez70@gmail.com",
+      href: "mailto:ihossein.mld@gmail.com",
       icon: "mynaui:at",
       label: "Email",
     },
     {
-      href: "https://leetcode.com/u/amirmAfzal/",
-      icon: "hugeicons:leetcode",
-      label: "LeetCode",
-    },
-    {
-      href: "https://t.me/Amirm_afzal2",
+      href: "https://t.me/ihosseinart",
       icon: "lineicons:telegram",
       label: "Telegram",
+    },
+        {
+      href: "https://www.youtube.com/@ihossein-mld",
+      icon: "iconoir:youtube",
+      label: "YouTube",
     },
   ];
   return (

@@ -11,8 +11,7 @@ const SkillsSectionContent = () => {
       <HeroTitle
         title="MY SKILLS"
         subtitle="Things I Am Good At"
-        description="All these skills have been developed through years of hands-on
-          experience."
+        description="A blend of technical mastery and continuous learning, refined through years of active industry experience."
       />
       <div className="mt-10 md:mt-16 grid w-full grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
         {skills.map((skill, index) => (
